@@ -38,7 +38,7 @@ $movies = [
       ],
     ],
   [
-    "title" => "Harry Potter e la pietra filosofale",
+    "title" => "Harry Potter",
     "year" => "1999",
     "director" => "Ping Pong",
     "time" => "120 min",

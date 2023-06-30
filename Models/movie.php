@@ -20,3 +20,5 @@ class Movie {
 
   }
 };
+
+$ciao = "hello";
