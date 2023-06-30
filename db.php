@@ -1,7 +1,7 @@
 <?php
 
 $movies = [
-  [
+  (object)[
     "title" => "Into the Wild",
     "year" => "2007",
     "director" => "Sean Penn",
@@ -10,7 +10,7 @@ $movies = [
     "genres" => ["Drammatico", "Biografico", "Avventura"
       ],
     ],
-  [
+    (object)[
     "title" => "Avatar",
     "year" => "2015",
     "director" => "Chi lo sa",
@@ -19,7 +19,7 @@ $movies = [
     "genres" => ["Fantascienza", "Edilizia"
       ],
     ],
-  [
+    (object)[
     "title" => "The Dawn Wall",
     "year" => "2017",
     "director" => "Josh Lowell",
@@ -28,7 +28,7 @@ $movies = [
     "genres" => ["Documentario", "Sportivo"
       ],
     ],
-  [
+    (object)[
     "title" => "L'ultimo Samurai",
     "year" => "2001",
     "director" => "Neanche questo lo so",
@@ -37,7 +37,7 @@ $movies = [
     "genres" => ["Giapponese", "Spadaccini"
       ],
     ],
-  [
+    (object)[
     "title" => "Harry Potter",
     "year" => "1999",
     "director" => "Ping Pong",

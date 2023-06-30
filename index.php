@@ -35,6 +35,9 @@ h6{
 span{
   margin-top:5px;
 }
+/* ul{
+  margin: 0;
+} */
 </style>
 
 
@@ -48,42 +51,32 @@ span{
 
 
 $movies[] = new Movie("Oppenheimer", "2010","Christofer Nolan", "208 min","booo", "brutto", "Cattivo" );
+$movies[] = new Movie("Indiana Jones", "2022", "Pinni l'avaro", "111 min", "Documentario", "Avventura");
 
 // echo "<pre>",var_dump($movies),"</pre>";
 
-
-        foreach ($movies as $value) {
+        foreach ($movies as $movie) {
           echo "<div class='slot'>";
-          echo "<h3>" .$value->title ."</h3>";
-          echo "<span>" . $value['year'] ."</span>";
-          echo "<span>" . $value['director'] ."</span>";
-          echo "<span>" . $value['time'] ."</span>";
-          echo "<span>" . $value['main_actor'] ."</span>";
+          echo "<h3>" .$movie->title ."</h3>";
+          echo "<span>Anno: " . $movie->year ."</span>";
+          echo "<span>Regista: " . $movie->director ."</span>";
+          echo "<span>Durata: " . $movie->time ."</span>";
+          echo "<span>Attore principale: " . $movie->main_actor ."</span>";
+          echo "<span>Genere: ";
+          $genresCount = count($movie->genres);
+          foreach ($movie->genres as $key => $genre) {
+            echo $genre;
+            if ($key !== $genresCount - 1) {
+              echo ", ";
+          }
+          }
+          echo "</span>";
           echo "</div>";
         }
 ?>
 
-
     </div>
 </div>
-
-<?php
-// // echo "<pre>",var_dump($movie1),"</pre>";
-
-// echo "<pre>",var_dump($movies),"</pre>";
-
-
-
-
-$movies[] = new Movie("Oppenheimer", "2010","Christofer Nolan", "208 min","booo", "brutto", "Cattivo" );
-
-// echo "<pre>",var_dump($movies),"</pre>";
-
-// echo $movie1 -> title;
-
-// echo "<br>";
-
-?>
 
 </body>
 </html>
