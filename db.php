@@ -45,7 +45,7 @@ $movies = [
     "main_actor" => "Daniel Radcliff",
     "genres" => ["Magia", "Avventura", "Fantascienza"
       ],
-    ],
+    ]
 ]
 
 ?>

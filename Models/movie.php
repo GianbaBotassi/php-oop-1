@@ -21,4 +21,3 @@ class Movie {
   }
 };
 
-$ciao = "hello";

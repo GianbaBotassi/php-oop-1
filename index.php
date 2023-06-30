@@ -19,6 +19,7 @@
 .row {
   display: flex;
   justify-content: center;
+  flex-wrap:wrap;
 }
 
 .slot {
@@ -45,9 +46,15 @@ span{
 
       <?php
 
+
+$movies[] = new Movie("Oppenheimer", "2010","Christofer Nolan", "208 min","booo", "brutto", "Cattivo" );
+
+// echo "<pre>",var_dump($movies),"</pre>";
+
+
         foreach ($movies as $value) {
           echo "<div class='slot'>";
-          echo "<h3>" . $value['title'] ."</h3>";
+          echo "<h3>" .$value->title ."</h3>";
           echo "<span>" . $value['year'] ."</span>";
           echo "<span>" . $value['director'] ."</span>";
           echo "<span>" . $value['time'] ."</span>";
@@ -65,6 +72,12 @@ span{
 
 // echo "<pre>",var_dump($movies),"</pre>";
 
+
+
+
+$movies[] = new Movie("Oppenheimer", "2010","Christofer Nolan", "208 min","booo", "brutto", "Cattivo" );
+
+// echo "<pre>",var_dump($movies),"</pre>";
 
 // echo $movie1 -> title;
 
